@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="97dp"
+        android:text="Control" />
+
+    <Button
+        android:id="@+id/idEncender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idControl"
+        android:layout_marginTop="46dp"
+        android:text="ENCENDER" />
+
+    <Button
+        android:id="@+id/idApagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEncender"
+        android:layout_marginTop="14dp"
+        android:text="APAGAR" />
+
+    <TextView
+        android:id="@+id/idBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idApagar"
+        android:layout_marginTop="50dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/idDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBuffer"
+        android:layout_marginTop="48dp"
+        android:text="Desconectar" />
+</RelativeLayout>
