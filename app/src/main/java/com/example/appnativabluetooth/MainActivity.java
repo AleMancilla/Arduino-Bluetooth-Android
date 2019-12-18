@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (endOfLineIndex > 0) {
                         String dataInPrint = DataStringIN.substring(0, endOfLineIndex);
-                        IdBufferIn.setText("Dato: " + dataInPrint);//<-<- PARTE A MODIFICAR >->->
+                        IdBufferIn.setText(IdBufferIn.getText()+dataInPrint);//<-<- PARTE A MODIFICAR >->->
                         DataStringIN.delete(0, DataStringIN.length());
                     }
                 }
@@ -73,12 +73,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 MyConexionBT.write("1");
+
+                IdBufferIn.setText("");
             }
         });
 
         IdApagar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 MyConexionBT.write("0");
+                IdBufferIn.setText("");
             }
         });
 

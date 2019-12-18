@@ -10,14 +10,23 @@
         android:id="@+id/idTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="81dp"
-        android:text="Dispositivos Vinculados" />
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="25dp"
+        android:text="Dispositivos Vinculados"
+        android:textSize="30sp" />
 
     <ListView
         android:id="@+id/idLista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/idTitulo"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="53dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-3dp"
+        app:srcCompat="@mipmap/camachologo" />
 </RelativeLayout>

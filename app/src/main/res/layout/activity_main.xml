@@ -11,38 +11,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="97dp"
-        android:text="Control" />
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="CamachoNet Aplication"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/idEncender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idControl"
-        android:layout_marginTop="46dp"
-        android:text="ENCENDER" />
+        android:layout_marginTop="90dp"
+        android:text="Limpiando Datos" />
 
     <Button
         android:id="@+id/idApagar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idEncender"
-        android:layout_marginTop="14dp"
-        android:text="APAGAR" />
+        android:layout_marginTop="-113dp"
+        android:text="LEER DATOS" />
 
-    <TextView
-        android:id="@+id/idBuffer"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/idApagar"
-        android:layout_marginTop="50dp"
-        android:text="TextView" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/idEncender"
+        android:layout_marginTop="21dp">
 
-    <Button
-        android:id="@+id/idDesconectar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/idBuffer"
-        android:layout_marginTop="48dp"
-        android:text="Desconectar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idBuffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center|top"
+                android:text="DATOS:"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/idDesconectar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="213dp"
+                android:text="Desconectar" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
